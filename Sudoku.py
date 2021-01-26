@@ -17,6 +17,29 @@ board = [
     [0,4,9,2,0,6,0,0,7]
 ]
 
+def valid(bo,num,pos):
+    # check row each row by sequence
+    for i in range(len(bo[0])):
+        if bo[pos[0]][i] == num and pos[i] != i:
+            return False
+
+    # to check coloumn
+
+    for i in range(len(bo)):
+        if bo[i][pos[1]] == num and pos[0] != i:
+            return False
+
+    # Check box
+    box_x = pos[1] // 3  # 3 becuse we are checking 3 by 3 box so that a numbe is not repeating itself.
+
+
+
+
+
+
+
+
+
 def print_board(bo):
     for i in range(len(bo)):
         if i % 3 and i != 0:
@@ -36,7 +59,7 @@ def find_empty(bo):
             if bo[i][j] == 0:
                 return (i, j )  # row and column
 
-            
+
 
 
 
