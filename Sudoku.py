@@ -1,9 +1,10 @@
 # Sodoku in Python
-# With help of backtracking 
+# With help of backtracking
 
 
 
-
+# Board to represent our problem
+# Will work on board to solve problem 
 board = [
     [7,8,0,4,0,0,1,2,0],
     [6,0,0,0,7,5,0,0,9],
@@ -15,3 +16,21 @@ board = [
     [1,2,0,0,0,7,4,0,0],
     [0,4,9,2,0,6,0,0,7]
 ]
+
+def print_board(bo):
+    for i in range(len(bo)):
+        if i % 3 and i != 0:
+            print("---------------")
+
+    for j in range (len(bo[0])):
+        print(" | ",end="")
+
+        if j == 8:
+            print(bo[i][j])
+        else:
+            print(str(bo[i][j] + ""))
+
+
+
+
+
