@@ -31,6 +31,13 @@ def valid(bo,num,pos):
 
     # Check box
     box_x = pos[1] // 3  # 3 becuse we are checking 3 by 3 box so that a numbe is not repeating itself.
+    box_y = pos[0] // 3
+
+    for i in range(box_y*3, box_y*3 + 3):
+        for j in range(box_x * 3, box_x*3 + 3):
+            if bo[i][j] == num and (i, j) != pos:
+                return False
+            
 
 
 
