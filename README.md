@@ -8,7 +8,7 @@ Backtracking: Backtracking is a general algorithm for finding all (or some) solu
 Programming Language = Python
 Modules/Libraries = Pygame, Solver, Valid, Time
 Tool: PyCharm
-Important Links: www.pygame.org, www.pygame.org
+Important Links: www.pygame.org, www.python.org, https://docs.sympy.org/latest/modules/solvers/solvers.html
 
 #Sodoku SnapShots
 Snapshot1
