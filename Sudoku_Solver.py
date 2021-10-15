@@ -3,7 +3,7 @@
 # solver.py
 
 def solve(bo):
-    find = find_empty(bo)
+    find = find_empty(bo). # bo = board (Sudoku board)
     if not find:
         return True
     else:
